@@ -1,0 +1,99 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bom</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <script type="text/javascript" src="//use.typekit.net/lqt5prq.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<script type="text/template" name="first">
+    <div class="header"></div>
+    <h1>Page transition with Backbone.js</h1>
+      <button type="button" class="btn btn-default btn-lg btn-block btn-top" id="hoge">
+        <span class="pull-left">SHOW NEXT PAGE TRANSITION</span>
+        <span class="pull-right"><i class="fa fa-chevron-right opaque"></i></span>
+        </button>
+    <p><a href="#/second" class="next-link">Next &rarr;</a></p>
+</script>
+
+<script type="text/template" name="second">
+    <div class="header"></div>
+    <h1>Page transition with Backbone.js</h1>
+      <button type="button" class="btn btn-default btn-lg btn-block btn-top" id="hoge">
+        <span class="pull-left">SHOW NEXT PAGE TRANSITION</span>
+        <span class="pull-right"><i class="fa fa-chevron-right opaque"></i></span>
+        </button>
+    <p><a href="#/first" class="next-link">Next &rarr;</a></p>
+</script>
+
+<script type="text/template" name="footer">
+<div class="footer text-left">
+<small>
+<p class="footer-link"></p>
+</small>
+</div>
+</script>
+
+<div class="container">
+  <div class="page is-visible"></div>
+</div>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+        <!-- build:js scripts/vendor.js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/underscore/underscore.js"></script>
+        <script src="bower_components/backbone/backbone.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js scripts/plugins.js -->
+        <script src="bower_components/sass-bootstrap/js/affix.js"></script>
+        <script src="bower_components/sass-bootstrap/js/alert.js"></script>
+        <script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
+        <script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
+        <script src="bower_components/sass-bootstrap/js/modal.js"></script>
+        <script src="bower_components/sass-bootstrap/js/transition.js"></script>
+        <script src="bower_components/sass-bootstrap/js/button.js"></script>
+        <script src="bower_components/sass-bootstrap/js/popover.js"></script>
+        <script src="bower_components/sass-bootstrap/js/carousel.js"></script>
+        <script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
+        <script src="bower_components/sass-bootstrap/js/collapse.js"></script>
+        <script src="bower_components/sass-bootstrap/js/tab.js"></script>
+        <!-- endbuild -->
+
+        <!-- Include Simple Slider JavaScript and CSS -->
+        <script src="bower_components/jquery-simple-slider/js/simple-slider.js"></script>
+        <link href="bower_components/jquery-simple-slider/css/simple-slider.css" rel="stylesheet" type="text/css" />
+        <link href="bower_components/jquery-simple-slider/css/simple-slider-volume.css" rel="stylesheet" type="text/css" />
+
+        <!-- build:js({.tmp,app}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <script src="scripts/templates.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
